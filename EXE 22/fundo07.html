@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        /*no conttainer a position é sempre relative do pai ou externa*/
+        #container {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: purple ;
+        }
+        /* no contteudo ou filho ou interno a position é sempre absolute*/
+        #conteudo {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            /* quando vc add o position: absolute;
+            vc destrava duas ferramentas (left e top)*/
+            left: 50%;
+            top: 50%;
+            /*pode add % tb */
+            transform: translate(-50%, -50%);
+            /*a ferramenta transform: trabslate altera a ancoragem do elemento para o centro*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
