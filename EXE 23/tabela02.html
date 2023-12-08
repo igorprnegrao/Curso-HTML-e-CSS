@@ -17,10 +17,21 @@
             padding: 10px;
             background-color: gainsboro;
         }
-
+        /* Para add cabeçalho fixo durante a rolagem devemos colocar na tag table do css a funçao position: relative como esta abaixo 
+        depois criar um stylo com o caminho até o cabeçalho thead > tr > th
+        dentro do estilo add position: stycky (colado), depois top: 0;
+        padding: 1px; e bg color da mesma cor cabeçalho.*/
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            padding: -1px;
+            background-color: rgb(98, 97, 97);
         }
 
         td, th {
@@ -37,12 +48,16 @@
             text-align: right;
         }
 
+        
+
         thead, tfoot {
             background-color: rgb(98, 97, 97);
             color: white;
         }
 
-        
+        td#para {
+            text-decoration: underline;
+        }
     </style>
     
 </head>
@@ -77,17 +92,71 @@
             </tr>
 
             <tr>
-                <td>Rio de Jnaeiro</td>
+                <td>Rio de Janeiro</td>
                 <td class="num">17.264.943</td>
             </tr>
 
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.016.906</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8.452.381</td>
+            </tr>
+            <tr>
+                <td id="para"><strong>Pará</strong></td>
+                <td class="num">7.581.051</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6.574.789</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.120.494</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.118.360</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.068.017</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.302.729</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.562.409</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.383.445</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">830.018</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
                 <th scope="row">Total de Habitantes</th>
-                <td class="num"><strong>38.433.734</strong></td>
+                <td class="num"><strong>120.433.734</strong></td>
             </tr>
         </tfoot>
     </table>
+
+    <h2>Texto Teste</h2>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ratione distinctio nisi fugit mollitia earum est quod ullam error facilis odio, ad quasi excepturi, consequatur laborum suscipit! Maxime, repudiandae aut? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores aperiam voluptatem ab quo vitae error, vero, provident quam voluptatibus expedita quia accusamus harum mollitia illo sunt nemo reiciendis eum! Deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tempore impedit repudiandae voluptatibus ex illo consectetur mollitia quasi eum fugit ducimus, molestiae unde sit aperiam suscipit, tempora ab? Dolore, atque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque veritatis distinctio assumenda ipsam. Debitis, omnis distinctio eum doloribus quam accusamus cum saepe. Ullam at sequi praesentium, accusamus alias dolorum rerum!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ratione distinctio nisi fugit mollitia earum est quod ullam error facilis odio, ad quasi excepturi, consequatur laborum suscipit! Maxime, repudiandae aut? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores aperiam voluptatem ab quo vitae error, vero, provident quam voluptatibus expedita quia accusamus harum mollitia illo sunt nemo reiciendis eum! Deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tempore impedit repudiandae voluptatibus ex illo consectetur mollitia quasi eum fugit ducimus, molestiae unde sit aperiam suscipit, tempora ab? Dolore, atque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque veritatis distinctio assumenda ipsam. Debitis, omnis distinctio eum doloribus quam accusamus cum saepe. Ullam at sequi praesentium, accusamus alias dolorum rerum!</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ratione distinctio nisi fugit mollitia earum est quod ullam error facilis odio, ad quasi excepturi, consequatur laborum suscipit! Maxime, repudiandae aut? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores aperiam voluptatem ab quo vitae error, vero, provident quam voluptatibus expedita quia accusamus harum mollitia illo sunt nemo reiciendis eum! Deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tempore impedit repudiandae voluptatibus ex illo consectetur mollitia quasi eum fugit ducimus, molestiae unde sit aperiam suscipit, tempora ab? Dolore, atque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque veritatis distinctio assumenda ipsam. Debitis, omnis distinctio eum doloribus quam accusamus cum saepe. Ullam at sequi praesentium, accusamus alias dolorum rerum!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ratione distinctio nisi fugit mollitia earum est quod ullam error facilis odio, ad quasi excepturi, consequatur laborum suscipit! Maxime, repudiandae aut? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores aperiam voluptatem ab quo vitae error, vero, provident quam voluptatibus expedita quia accusamus harum mollitia illo sunt nemo reiciendis eum! Deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tempore impedit repudiandae voluptatibus ex illo consectetur mollitia quasi eum fugit ducimus, molestiae unde sit aperiam suscipit, tempora ab? Dolore, atque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque veritatis distinctio assumenda ipsam. Debitis, omnis distinctio eum doloribus quam accusamus cum saepe. Ullam at sequi praesentium, accusamus alias dolorum rerum!</p>
 </body>
 </html>
