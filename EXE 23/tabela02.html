@@ -10,6 +10,14 @@
 
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: left;
+            padding: 10px;
+            background-color: gainsboro;
+        }
+
         table {
             width: 500px;
             border-collapse: collapse;
@@ -19,6 +27,10 @@
             border: 1px solid black;
             padding: 10px;
             
+        }
+
+        tbody > tr:nth-child(2n) {      
+            background-color: lightgrey;
         }
 
         td.num {
@@ -38,6 +50,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!--Anatomia para tabelas grandes
         Table
+            Caption = legenda da tabela
             Thead
                 Tr, Td, Th
             Tbody
@@ -46,10 +59,11 @@
                 tr, td, th
     -->
     <table>
+        <caption>População das Unidades Federativas.</caption> <!--legenda da tabela-->
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>  <!--titulo da coluna add scope="col"-->
+                <th scope="col" style="width: 100px;">População</th> <!--style="width: 100px" para estilizar a coluna-->
             </tr>
         </thead>
         <tbody>
@@ -70,7 +84,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>38.433.734</strong></td>
             </tr>
         </tfoot>
