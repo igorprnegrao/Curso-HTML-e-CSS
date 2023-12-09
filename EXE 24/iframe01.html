@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos Iframe</title>
+    <style>
+        iframe {
+            height: 600px;
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de um iframe</h1>
@@ -15,13 +20,26 @@
     <!-- Iframe é como criar uma janela ou instancia nova dentro do seu site... -->
     <p>
         Acessando o site do
-        <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500px" scolling="yes">
+    <!-- scrolling ativa a rolagem ou desativa yes ou no -->
+    <!-- frameborder add (1) ou retira a borda (0) -->
+    <!-- nem todos os mobiles são  com iframes, use tb a ancora -->
+            <a href="https://www.cursoemvideo.com" target="_blank">Curso em video</a>
+        </iframe>
         para aprender a progrmar.
     </p>
 
     <p>
         o site do <iframe src="https://www.google.com.br" frameborder="0"></iframe> também muito legal
     </p>
+
+    <p>
+        O repositório do guanabra
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0"></iframe>
+        também é muito legal.
+    </p>
     <!-- alguns site como o google tem proteção contra iframes recusando a conexão por sites de terceiros. -->
+
+    <!-- Tamanho padrão do Iframe é de 300x150px-->
 </body>
 </html>
