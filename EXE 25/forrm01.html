@@ -12,13 +12,18 @@
 </head>
 <body>
     <h1>Meu Primeiro formulário</h1>
+    
+    <form action="cadastro.php">
+        <p><label for="inome">Nome:</label> <input type="text" name="Nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+    
     <!-- Formulário simples
     usar a tag form crira o paragrafo e dentro add o nome do campo e usar um imput:text para criar a caixa.
     depois criar outro paragrafo com input:submit -->
-    <form>
-        <p>Nome: <input type="text" name="Nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="Sobrenome" id="sobrenome"></p>
-        <p><input type="submit" value="Enviar"></p>
-    </form>
+    <!-- se quiser desligar o autocomplete do formulário barta add a função autocomplete="off" na tag <form></form> -->
+    <!-- usar o action na tag form para enviar os dados do formulário -->
+    <!-- para link o formularios precisamos envelopar o nome com a tag label, no for devemos colocar o id do formulário e o id deve possuir sempre o i na frente -->
 </body>
 </html>
