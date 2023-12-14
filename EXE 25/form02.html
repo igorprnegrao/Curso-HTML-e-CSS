@@ -10,11 +10,11 @@
     <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="iusu">Usuários: </label>
-            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="20" placeholder="nome do usuário">
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="20" placeholder="nome do usuário" autocomplete="username">
         </p>
         <p>
             <label for="isen">Senha: </label>
-            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="20" placeholder="mínimo 8 caracteres">
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="20" placeholder="mínimo 8 caracteres" autocomplete="current-password">
         </p>
         <p>
             <input type="submit" value="Enviar">
@@ -23,6 +23,7 @@
     <!-- required significa obrigatório vc usa no final de cada input
     vc pode limitar o min e max de caractere nos formulários minlength maxlength
     o tamanho da caixa com size 
-    vc pode usar o placeholder para deixae sugestão de prrenchimento para o usuário-->
+    vc pode usar o placeholder para deixae sugestão de prrenchimento para o usuário os inputs vc pode usar 
+    o autocomplete com várias funções-->
 </body>
 </html>
