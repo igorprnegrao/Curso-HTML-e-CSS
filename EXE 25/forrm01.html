@@ -13,7 +13,7 @@
 <body>
     <h1>Meu Primeiro formulário</h1>
     
-    <form action="cadastro.php">
+    <form action="cadastro.php" method="post">
         <p><label for="inome">Nome:</label> <input type="text" name="Nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
@@ -25,5 +25,7 @@
     <!-- se quiser desligar o autocomplete do formulário barta add a função autocomplete="off" na tag <form></form> -->
     <!-- usar o action na tag form para enviar os dados do formulário -->
     <!-- para link o formularios precisamos envelopar o nome com a tag label, no for devemos colocar o id do formulário e o id deve possuir sempre o i na frente -->
+    para enviar o formulário existe dois métodos
+    o GET que vem padrão, e o método POST
 </body>
 </html>
