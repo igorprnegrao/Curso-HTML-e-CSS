@@ -9,12 +9,20 @@
 <body>
     <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
+        <!-- quando for usar um <fieldset></fieldset> e no botão de radio, com marcação de escolha, e só a uma escolha possível, devemos colocar o mesmo name para as escolhas.
+        se quiser deixar uma posição ja marcada, podemos usar o checked -->
+        
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label> <br>
+            <input type="radio" name="sexo" id="isxfem" value="F"> <label for="isxfem">Feminino</label>
+        </fieldset>
         <fieldset>
             <legend>Esportes Favoritos</legend>
-            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label> <br>
             <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
             <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
-            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label>
         </fieldset>
         <p>
             <input type="submit" value="Enviar">
