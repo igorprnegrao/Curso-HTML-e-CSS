@@ -13,4 +13,12 @@ html {
     line-height: 1.5em;
     text-align: justify;
 }
+/* para o menu não aparecer usamos na tag menu o display: none */
+menu {
+    display: none;
+}
 
+article::after {
+    content: 'Esse artigo foi impresso através do site https://www.aimidiacenter.com.br';
+    
+}
