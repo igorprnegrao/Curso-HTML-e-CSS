@@ -20,5 +20,6 @@ menu {
 
 article::after {
     content: 'Esse artigo foi impresso através do site https://www.aimidiacenter.com.br';
-    
+    padding: 10px;
+    margin: 10px;
 }
