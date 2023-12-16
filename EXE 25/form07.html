@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        
+        <p>
+            <!--Para criar uma lista de seleção, podemos usar a tag <select name="" id=""></select> e dentro do select usar a tag <option value=""></option> e para agrupar as opções podemos usar a tag <optgroup></optgroup> -->
+            <label for="iest">Estado: </label>
+            <select name="estado" id="iest">
+                <option value="" selected>---ESCOLHA---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Pualo</option>
+                </optgroup>
+                
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+        </p>
+        <!-- para criar uma lista que podemos tb inserir dados no formalário
+        usamos o <input type="text" name="" id=""> básico, logoa abaixo usamos a tag <datalist></datalist> com as <option value=""></option> dentro
+        obs: para vuncular a datalist ao input usamos a id no datalist e o atributo list no input sync ambos-->
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="Prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contador</option>
+                <option value="DEV">Programador</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+
+        <!-- para criar um formulário co caixa de texto usamos a tag <textarea name="" id="" cols="30" rows="10"></textarea> -->
+        <p>
+            <label for="imsg">Mensagem: </label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
