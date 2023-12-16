@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <!-- para usar formulário com cor usamos color e com value definimos uma cor de entrada em hexadecímal -->
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="Cor" id="icor" value="#000000">
+        </p>
+
+        <!-- para usar uma barra slide para medir usamos o range geralemnte o valor vai de 0 a 100, mas podemos personalizar usando o min e max -->
+
+        <p>
+            <label for="inivel">Nível de satisfação: </label>
+            <input type="range" name="nivel" id="inivel" min="1" max="10">
+        </p>
+
+        <!-- quando usar o formulário de envio de arquivo devemos usar o método post -->
+        <p>
+            <label for="ifoto">Foto do Perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
