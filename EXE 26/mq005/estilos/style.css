@@ -18,13 +18,23 @@ header h1 {
     padding: 10px;
     text-align: center;
 }
+i#burguer {
+    background-color: rgb(75, 74, 74);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
 
 menu {
     display: block;
 }
+
 menu ul {
     list-style-type: none;
 }
+
+
 menu > ul > li > a {
     display: block;
     padding: 10px;
