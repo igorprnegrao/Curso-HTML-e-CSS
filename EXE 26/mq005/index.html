@@ -30,12 +30,12 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae accusamus, natus reiciendis reprehenderit saepe est modi illo ea eius itaque consectetur molestiae qui corrupti iure ipsum debitis unde nihil recusandae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit nam possimus omnis maxime rerum explicabo adipisci, quis, ab, voluptas dignissimos libero. Corrupti deserunt quia nostrum quis voluptate vero odio iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsum deserunt minima, beatae molestiae quos maxime dolorum sed tenetur veritatis veniam voluptatum ad et magnam iusto amet consectetur eos distinctio.</p>
         </article>
     </main>
-
     <script>
-        function clickMenu {
-            if (itens.style.display == 'block'){
-                itens.style.display = 'none'
-            } else {
+        function clickMenu() {
+            var itens = document.getElementById("itens");
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none';
+            } else{
                 itens.style.display = 'block'
             }
         }
